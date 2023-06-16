@@ -1,0 +1,38 @@
+### Get Content
+GET http://localhost:8080/api/content
+
+### Get Content by Id
+GET http://localhost:8080/api/content/1
+
+### Upload Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Title2",
+  "desc": "Description2",
+  "status": "IDEA",
+  "type": "COURSE",
+  "dateCreated": "2023-06-16T12:33:20.8819717",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### Update Content
+PUT http://localhost:8080/api/content/2
+Content-Type: application/json
+
+{
+"id": 2,
+"title": "DADSADSA",
+"desc": "BDSADSAdng2",
+"status": "IDEA",
+"type": "COURSE",
+"dateCreated": "2023-06-16T12:33:20.8819717",
+"dateUpdated": null,
+"url": ""
+}
+
+### Delete by ID
+DELETE http://localhost:8080/api/content/2
